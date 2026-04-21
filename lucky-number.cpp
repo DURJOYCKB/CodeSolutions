@@ -4,6 +4,7 @@ using namespace std;
 int main(){
     int n;
     cin >> n;
+
     int d = n % 10;
     if(d == 4 || d == 7){
         cout << "YES" << endl;
@@ -14,7 +15,7 @@ int main(){
         cout << "NO" << endl;
     }
     
-   
+    
     return 0;
 
 }

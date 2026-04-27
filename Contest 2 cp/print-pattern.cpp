@@ -1,21 +1,17 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int t, n;
-    cin >> t;
-    while(t--){
-        cin >> n;
-        for(int i=1, a=1; i<=n; i++){
-           
-            for(int j=1; j<=n; j++){
-                cout << a << " ";
-                a = a+j;
+    int n;
+    cin >> n;
+    for(int i=1;i<=n;i++){
+        for(int j=1; j<=n;j++){
+            if(i==1 || i ==n || j ==1 || j== n){
+                cout << n << " ";
+            } 
+            else {
+                cout << " ";
             }
-            a = 1;;
-            a = a+i+i;
-            cout << endl;
-            
-            
         }
+        cout << endl;
     }
 }

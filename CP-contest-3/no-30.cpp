@@ -1,11 +1,12 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int t, a,  temp=0, flag=0;
+    int t, a,  temp, flag=0;
     cin >> t;
-    for(int i=0; i<t; i++){
+    cin >> temp;
+    for(int i=1; i<t; i++){
         cin >> a;
-        if(temp > a){
+        if(temp >= a){
             flag=1;
         }
         temp = a;

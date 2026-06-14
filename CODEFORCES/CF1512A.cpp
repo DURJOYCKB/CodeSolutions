@@ -1,16 +1,27 @@
 #include<iostream>
 using namespace std;
-int main(){
-    int t, n, arr[10001];
+int main() {
+    int t;
     cin >> t;
-    while(t--){
+    while(t--) {
+        int n;
         cin >> n;
-        for(int i=0; i<n; i++){
+
+        int arr[101];
+        for(int i = 0; i < n; i++) {
             cin >> arr[i];
         }
-        for(int i=1; i<n-1; i++){
-            if(arr[i] != arr[i-1] && arr[i] != arr[i+1]){
-                cout << i+1 << endl;
+        int c;
+
+        if(arr[0] == arr[1])
+            c = arr[0];
+        else
+            c = arr[2];
+
+        for(int i = 0; i < n; i++) {
+            if(arr[i] != c) {
+                cout << i + 1 << endl;
+                break;
             }
         }
     }
